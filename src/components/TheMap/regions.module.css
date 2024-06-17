@@ -1,0 +1,48 @@
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mapContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapContainer > h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .mapContainer > p {
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .regions * {
+    transition: all 250ms ease-in-out;
+  }
+  
+  .blur > g > *:not(g:hover, foreignObject) {
+    filter: blur(10px);
+  }
+  
+  .saratovViget {
+    opacity: 0;
+    font-size: 14px;
+    padding-top: 40px;
+    padding-left: 10px;
+    pointer-events: none;
+    transition: all 500ms ease-in-out;
+  }
+  .active {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .saratovViget span {
+    font-weight: 700;
+  }
+  
