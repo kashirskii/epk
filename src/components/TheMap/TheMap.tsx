@@ -1,6 +1,5 @@
 'use client';
 import React, { LegacyRef, useRef, useState } from 'react';
-import Borders from './Borders';
 import Central from './Central';
 import Southern from './Southern';
 import Northwestern from './Northwestern';

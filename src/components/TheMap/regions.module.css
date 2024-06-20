@@ -1,5 +1,9 @@
 .main {
-    max-width: 1200px;
+    background-color: black;
+  }
+
+  .wrapper {
+    max-width: 1200;
     margin: 0 auto;
   }
   

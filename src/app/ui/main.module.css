@@ -1,0 +1,89 @@
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 55px 0;
+}
+
+.welcome > h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #ededed;
+}
+
+.welcome > p {
+    color: #888;
+}
+
+.welcome span {
+    color: #fafafa;
+}
+
+.welcomeArticle {
+    color: #888;
+    display: flex;
+    gap: 42px;
+}
+
+.welcomeArticle article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.benefits {
+    margin-top: 55px;
+}
+.benefits h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #fafafa;
+    font-weight: 700;
+}
+
+.benefitsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 55px;
+}
+
+.benefitsContainer > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.benefitsSmallContainer > div {
+    height: 170px;
+}
+.benefitsLargeContainer > div {
+    height: 300px;
+}
+
+.benefitsContainer > div h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.benefitsContainer > div p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #888;
+}
+
+.benefitsContainer > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    line-height: 18px;
+    width: 390px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 6px;
+}
