@@ -1,4 +1,4 @@
-import style from '../ui/header.module.css';
+import style from '../../sass/header.module.scss'
 import { Kelly_Slab } from 'next/font/google';
 
 const kelly = Kelly_Slab({

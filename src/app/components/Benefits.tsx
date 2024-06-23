@@ -1,47 +1,46 @@
-import style from '../ui/main.module.css';
+import style from '../../sass/main/benefits.module.scss'
+import { BenefitsCard } from './BenefitsCard';
+import picture from '../../public/photo.png';
+import Image from 'next/image';
 
 const Benefits = () => {
   return (
-    <div className={style.benefits}>
+    <div className={style.wrapper}>
       <h2>
         TBU: когда кассетный подшипник — это больше, чем просто
         подшипник.
       </h2>
-      <div className={style.benefitsContainer}>
-        <div className={style.benefitsLargeContainer}>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className={style.benefitsSmallContainer}>
-          <div>
-            <h5>
-              Минимальный крутящий момент при
-              <br /> номинальной нагрузке
-            </h5>
-            <p>
-              Минимальный крутящий момент при
-              <br /> стандартной нагрузке.
-            </p>
-          </div>
-
-          <div>
-            <h5>
-              Улучшенная консистенция смазки для
-              <br /> подшипниковых уплотнений, используемых
-              <br /> для ж/д транспорта
-            </h5>
-            <p>
-              Улучшенная смазка для подшипниковых
-              <br /> уплотнений, используемых в<br /> железнодорожном
-              транспорте.
-            </p>
-          </div>
-          <div>
-            <h5>Снижение сопротивления качению</h5>
-            <p>Уменьшение сопротивления качению.</p>
-          </div>
-        </div>
+      <div className={style.benefits}>
+        <BenefitsCard
+          title='Минимальные эксплуатационные расходы'
+          text='Минимальный момент силы, который можно получить при номинальной нагрузке.'
+        >
+          <Image src={picture} width={200} height={200} alt='photo' />
+        </BenefitsCard>
+        <BenefitsCard
+          title='Минимальные эксплуатационные расходы'
+          text='Минимальный момент силы, который можно получить при номинальной нагрузке.'
+        >
+          <Image src={picture} width={200} height={200} alt='photo' />
+        </BenefitsCard>
+        <BenefitsCard
+          title='Минимальные эксплуатационные расходы'
+          text='Минимальный момент силы, который можно получить при номинальной нагрузке.'
+        >
+          <Image src={picture} width={200} height={200} alt='photo' />
+        </BenefitsCard>
+        <BenefitsCard
+          title='Минимальный крутящий момент при номинальной нагрузке'
+          text='Минимальный крутящий момент при стандартной нагрузке.'
+        />
+        <BenefitsCard
+          title='Улучшенная консистенция смазки для подшипниковых уплотнений, используемых для ж/д транспорта'
+          text='Улучшенная смазка для подшипниковых уплотнений, используемых в железнодорожном транспорте.'
+        />
+        <BenefitsCard
+          title='Снижение сопротивления качению'
+          text='Уменьшение сопротивления качению.'
+        />
       </div>
     </div>
   );

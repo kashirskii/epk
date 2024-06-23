@@ -1,4 +1,4 @@
-import style from '../ui/header.module.css';
+import style from '../../sass/header.module.scss'
 
 const SearchButton = () => {
     return (

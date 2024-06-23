@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { Logo } from './Logo';
-import style from '../ui/header.module.css';
 import { SearchButton } from './SearchButton';
+import style from '../../sass/header.module.scss'
 
 const Header = () => {
   return (
     <header className={style.header}>
-      <nav className={style.nav}>
+      <nav>
         <div className={style.links}>
           <Logo />
           <Link href='#'>О нас</Link>

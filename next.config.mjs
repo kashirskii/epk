@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+import path, { dirname } from 'path'
+
+const nextConfig = {
+
+};
 
 export default nextConfig;
