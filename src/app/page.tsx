@@ -1,6 +1,7 @@
-import style from '../components/TheMap/regions.module.css';
+import style from '../sass/main/main.module.scss'
 import { About } from './components/About';
 import { Benefits } from './components/Benefits';
+import { Career } from './components/Career';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <div className={style.wrapper}>
         <About />
         <Benefits/>
+        <Career/>
       </div>
     </main>
   );

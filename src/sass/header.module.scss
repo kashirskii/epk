@@ -1,7 +1,6 @@
 .header {
     position: sticky;
     height: 64px;
-    width: 100vw;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -21,7 +20,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @media (width < 1200) {
+        @media (width <= 1232) {
             width: 100%;
 
             .links {

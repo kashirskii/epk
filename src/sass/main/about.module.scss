@@ -1,7 +1,7 @@
 .wrapper {
     color: #888;
-    padding: 16px;
-
+    padding-top: 55px;
+    
     .about {
         display: flex;
         flex-direction: column;
@@ -9,7 +9,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 55px 0;
+        padding-bottom: 55px;
 
         h1 {
             font-weight: 700;
@@ -58,8 +58,6 @@
     }
 
     @media (width <= 1024) {
-        .about {
-            margin: 28px 0;
-        }
+        padding-top: 28px;
     }
 }
