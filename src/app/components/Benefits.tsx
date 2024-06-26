@@ -2,6 +2,7 @@ import style from '../../sass/main/benefits.module.scss'
 import { BenefitsCard } from './BenefitsCard';
 import picture from '../../public/photo.png';
 import Image from 'next/image';
+import { EfficiencySVG } from './EfficiencySVG';
 
 const Benefits = () => {
   return (
@@ -12,10 +13,10 @@ const Benefits = () => {
       </h2>
       <div className={style.benefits}>
         <BenefitsCard
-          title='Минимальные эксплуатационные расходы'
-          text='Минимальный момент силы, который можно получить при номинальной нагрузке.'
+          title='Обеспечение более высокого КПД для заказчика'
+          text='Повышение эффективности для клиента.'
         >
-          <Image src={picture} width={200} height={200} alt='photo' />
+          <EfficiencySVG/>
         </BenefitsCard>
         <BenefitsCard
           title='Минимальные эксплуатационные расходы'

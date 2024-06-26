@@ -1,5 +1,5 @@
 import style from '../../sass/main/career.module.scss'
-
+import Link from 'next/link';
 const Career = () => {
   return (
     <section className={style.career}>
@@ -29,7 +29,7 @@ const Career = () => {
           ввиду этого проходит подбор персонала на различные вакансии.
         </p>
       </article>
-      <button>Найти работу мечты</button>
+      <Link href='https://saratov.hh.ru/search/vacancy?text=%D0%95%D0%9F%D0%9A-%D0%91%D1%80%D0%B5%D0%BD%D0%BA%D0%BE&area=79'><button>Найти работу мечты</button></Link>
     </section>
   );
 };

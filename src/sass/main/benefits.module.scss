@@ -2,11 +2,22 @@
     margin-top: 55px;
 
     & > h2 {
-        font-size: 20px;
+        font-size: 1.25em;
         text-align: center;
         color: #fafafa;
         font-weight: 700;
         margin-bottom: 55px;
+    }
+
+    .efficiency {
+        margin: auto auto;
+        transition: all 350ms ease-in-out;
+
+        .arrowContainer {
+            transition: all 1000ms;
+            transform-origin: bottom;
+            transform: rotateZ(-75deg);
+        }
     }
 
     .benefits {
@@ -17,6 +28,7 @@
         .card {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
             gap: 20px;
             line-height: 1;
             padding: 20px;
@@ -29,20 +41,31 @@
             }
 
             h4 {
-                font-size: 14px;
+                font-size: 0.875em;
                 font-weight: 500;
                 color: #fafafa;
                 margin-bottom: 6px;
             }
 
             p {
-                font-size: 14px;
+                font-size: 0.875em;
                 font-weight: 300;
                 color: #888;
             }
+
+            &:hover {
+                background-color: #0a0a0a;
+                border: 1px solid #444;
+
+                .arrowContainer {
+                    animation:
+                        speedometer 2s forwards linear,
+                        twitching 500ms infinite ease-in-out 2s;
+                }
+            }
         }
 
-        @media (width <= 1024) {
+        @media (width >= 600) and (width <= 1024) {
             grid-template-columns: repeat(2, 1fr);
 
             & :nth-child(1) {
@@ -55,5 +78,42 @@
                 grid-area: 2 / 1 / 5 / 2;
             }
         }
+
+        @media (width <= 600) {
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(300px, 1fr);
+
+            .card {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@keyframes speedometer {
+    0% {
+        transform: rotateZ(-75deg);
+    }
+    33% {
+        transform: rotate(-47deg);
+    }
+    66% {
+        transform: rotate(9deg);
+    }
+    100% {
+        transform: rotateZ(75deg);
+    }
+}
+
+@keyframes twitching {
+    0% {
+        transform: rotateZ(75deg);
+    }
+    50% {
+        transform: rotateZ(71deg);
+    }
+    100% {
+        transform: rotateZ(75deg);
     }
 }
