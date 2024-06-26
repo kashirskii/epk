@@ -20,7 +20,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @media (width <= 1232) {
+        @media (max-width: 1232px) {
             width: 100%;
 
             .links {
@@ -28,7 +28,7 @@
                     display: none;
                 }
 
-                @media (width <= 600) {
+                @media (max-width: 600px) {
                     width: 100%;
                     justify-content: space-between;
                 }
@@ -60,11 +60,11 @@
             align-items: center;
             justify-content: space-between;
 
-            @media (width <= 1024) {
+            @media (max-width: 1024px) {
                 width: 150px;
             }
 
-            @media (width <= 600) {
+            @media (max-width: 600px) {
                 display: none;
             }
     

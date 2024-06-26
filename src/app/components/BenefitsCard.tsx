@@ -16,7 +16,7 @@ const BenefitsCard = ({
     <div className={style.card}>
       {children}
       <div>
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <p>{text}</p>
       </div>
     </div>

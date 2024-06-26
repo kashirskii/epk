@@ -42,7 +42,7 @@
         }
     }
 
-    @media (width <= 1200) {
+    @media (max-width: 1200px) {
         article {
             justify-content: center;
         }
@@ -57,7 +57,7 @@
         }
     }
 
-    @media (width <= 1024) {
+    @media (max-width: 1024px) {
         padding-top: 28px;
     }
 }

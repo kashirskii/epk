@@ -65,7 +65,7 @@
             }
         }
 
-        @media (width >= 600) and (width <= 1024) {
+        @media (min-width: 600px) and (max-width: 1024px) {
             grid-template-columns: repeat(2, 1fr);
 
             & :nth-child(1) {
@@ -79,7 +79,7 @@
             }
         }
 
-        @media (width <= 600) {
+        @media (max-width: 600px) {
             grid-template-columns: 1fr;
             grid-template-rows: minmax(300px, 1fr);
 
