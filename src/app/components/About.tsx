@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.about}>
-        <h1>Хватит колесить кругами!</h1>
+        <h1><div/><div/>Хватит колесить кругами!</h1>
         <p>
           Представляем инновационную технологию подшипников&nbsp;нового&nbsp;поколения.
           <br/><span>Конический кассетный подшипник (TBU)</span> -

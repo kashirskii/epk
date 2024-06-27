@@ -44,6 +44,25 @@
                 font-size: 1.5em;
                 color: #fff;
                 margin-right: 12px;
+                display: flex;
+                align-items: center;
+
+                > svg {
+                    padding-right: 12px;
+                }
+
+                > div {
+                    font-size: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 1;
+
+                    span {
+                        font-size: 0.55em;
+                        color: #0072f5;
+                    }
+                }
+
             }
         }
 

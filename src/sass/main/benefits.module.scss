@@ -1,10 +1,13 @@
 .wrapper {
-    margin-top: 55px;
+    margin-top: 105px;
 
     & > h2 {
         font-size: 1.25em;
+        letter-spacing: -0.04em;
         text-align: center;
-        color: #fafafa;
+        background-color: linear-gradient(180deg,#fff,#adadad);
+        background-clip: text;
+        -webkit-text-fill-color: text;
         font-weight: 700;
         margin-bottom: 55px;
     }
@@ -40,7 +43,7 @@
                 margin: 0 auto;
             }
 
-            h4 {
+            h3 {
                 font-size: 0.875em;
                 font-weight: 500;
                 color: #fafafa;
